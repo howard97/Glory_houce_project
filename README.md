@@ -8,7 +8,7 @@ First step
 
 clone the repository.
 
-git clone 
+git clone https://github.com/howard97/Glory_houce_project.git
 
 2 step
 
