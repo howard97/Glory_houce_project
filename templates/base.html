@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="{{ url_for('static', filename= '/css/style.css') }}">
+    {% block title %}{% endblock %}
+</head>
+<body>
+    <header class="main-head">
+        <nav>
+            <h3 class="logo"><a href="/landing">The Glory House</a></h3>
+            <ul class="head-links">
+                <li><a href="/live">LIVE</a></li>
+                <li><a href="#"><button>Sign Up</button></a></li>
+            </ul>
+        </nav>
+    </header>
+    {% block main %}
+    {% endblock %}
+   
+    <footer>
+        <div class="footer-wrapper">
+            <h5>Deliverance Center Church of Christ| The Glory House Lusaka Zambia &copy;</h5>
+            <ul>
+                <li><a  href="#" title="twitter-social-media"><img src="{{ url_for('static', filename='/icons/twitter.svg') }}" alt="twitter-social-media"></a></li>
+                <li><a  href="#" title="instagram-social-media"><img src="{{ url_for('static', filename= '/icons/instagram.svg') }}" alt="instagram-social-media"></a></li>
+                <li><a  href="#" title="youtube-social-media"><img src="{{ url_for('static', filename='/icons/youtube.svg') }}" alt="youtube-social-media"></a></li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>

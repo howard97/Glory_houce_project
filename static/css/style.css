@@ -1,0 +1,161 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.main-head {
+  background: #cca353;
+  position: sticky;
+  color: white;
+}
+
+nav {
+  min-height: 6vh;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 10rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+nav ul a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.logo {
+  flex: 2 1 40rem;
+}
+
+.logo a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul a button {
+  padding: 0.5rem 1.3rem;
+  background: #4c6e97;
+  border: none;
+  border-radius: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+button:hover {
+  background: #27394e;
+  font-size: 2.3rem;
+}
+
+/*Main Section*/
+.landing-head {
+  background: linear-gradient(rgba(104, 104, 167, 0.5), transparent),
+    url(../img/landing-church-background.jpg);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.landing-head h4 {
+  margin-top: 1rem;
+}
+.landing-head a button {
+  padding: 0.5rem 1.3rem;
+  background: #cca353;
+  border: none;
+  margin-top: 1rem;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+button {
+  font-size: 17px;
+  font-weight: bold;
+}
+.landing-head h4 {
+  margin-top: 2rem;
+}
+
+footer {
+  color: white;
+  background: rgb(41, 71, 107);
+}
+.footer-wrapper {
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  min-height: 8vh;
+  flex-wrap: wrap;
+}
+
+footer h5 {
+  flex: 1 1 40rem;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 30rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button:focus {
+  background: #2c3f57;
+  outline-style: solid;
+}
+
+.live {
+  min-height: 100vh;
+  background: url(../img/live.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.live h4 {
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 1000px) {
+  nav {
+    text-align: center;
+  }
+  .logo {
+    padding: 2rem;
+  }
+  footer {
+    text-align: center;
+  }
+  footer h5 {
+    padding-bottom: 2rem;
+  }
+}
